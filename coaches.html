@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coach Raoul Körner — Euro Pro Basketball Camp | July 27–30, 2026</title>
+<meta name="description" content="Meet Coach Raoul Körner — 25 years as a European professional head coach — leading the Euro Pro Basketball Camp in Vancouver, July 27–30, 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,800;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c1219;
+    --bg-2: #121c26;
+    --bg-3: #1a2535;
+    --text: #ffffff;
+    --muted: rgba(255, 255, 255, 0.65);
+    --accent: #2b50c0;
+    --accent-2: #4a6fd4;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-strong: rgba(255, 255, 255, 0.22);
+    --max: 1200px;
+    --radius: 10px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Rubik', 'Inter', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.0;
+    letter-spacing: -0.015em;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ========== NAV ========== */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(12, 18, 25, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  .nav-brand img {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover { opacity: 1; }
+  .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    transition: transform 0.15s ease, background 0.2s;
+  }
+  .btn:hover { background: var(--accent-2); transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border-strong);
+  }
+  .btn-outline:hover { background: rgba(255, 255, 255, 0.08); border-color: var(--text); }
+
+  @media (max-width: 768px) {
+    .nav-links a:not(.btn) { display: none; }
+  }
+
+  /* ========== HERO ========== */
+  .hero {
+    position: relative;
+    padding: 64px 0 72px;
+    overflow: hidden;
+    background:
+      radial-gradient(1000px 600px at 80% 20%, rgba(43, 80, 192, 0.15), transparent 60%),
+      radial-gradient(700px 500px at 10% 80%, rgba(43, 80, 192, 0.07), transparent 60%),
+      transparent;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    opacity: 0.6;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero-photo-col { position: relative; }
+  .hero-photo-main {
+    width: 100%;
+    aspect-ratio: 4/5;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  }
+  .hero-photo-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  @media (max-width: 860px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+    .hero-content { text-align: center; }
+    .hero-logo { margin: 0 auto 32px; }
+    .hero-ctas { justify-content: center; }
+    .hero-meta { justify-content: center; }
+    .hero-photo-col { max-width: 480px; margin: 0 auto; }
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--accent);
+    margin-bottom: 28px;
+    padding: 7px 14px;
+    border-radius: 999px;
+  }
+  .hero-logo {
+    height: clamp(130px, 18vw, 220px);
+    width: auto;
+    display: block;
+    margin: 0 auto 28px;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 0.92;
+    margin-bottom: 28px;
+    color: var(--text);
+    letter-spacing: -0.02em;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    margin-bottom: 36px;
+    font-size: 15px;
+    color: var(--muted);
+  }
+  .hero-meta strong { color: var(--text); font-weight: 700; }
+  .hero-sub {
+    font-size: clamp(17px, 2vw, 21px);
+    color: var(--text);
+    max-width: 700px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    opacity: 0.88;
+    line-height: 1.65;
+  }
+  .hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ========== SECTIONS ========== */
+  section {
+    padding: 72px 0;
+    border-top: 1px solid var(--border);
+  }
+  @media (max-width: 768px) {
+    section { padding: 52px 0; }
+  }
+  .section-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--accent);
+    padding: 7px 14px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+  .section-title {
+    font-size: clamp(40px, 5.5vw, 72px);
+    margin-bottom: 20px;
+    max-width: 900px;
+    color: var(--text);
+  }
+  .section-intro {
+    font-size: 18px;
+    color: var(--text);
+    opacity: 0.88;
+    max-width: 720px;
+    margin-bottom: 48px;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+
+  /* ========== COACH FEATURE ========== */
+  .coach-feature {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 72px;
+    align-items: center;
+  }
+  .coach-photo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .coach-photo {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-3);
+  }
+  .coach-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .coach-photo-main { aspect-ratio: 4/5; }
+  .coach-photo-secondary { aspect-ratio: 16/9; }
+  .coach-title-pill {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--accent);
+    padding: 7px 14px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+    font-weight: 700;
+  }
+  .coach-name {
+    font-size: clamp(48px, 6vw, 80px);
+    margin-bottom: 28px;
+    color: var(--text);
+  }
+  .coach-bio p {
+    margin-bottom: 18px;
+    color: var(--text);
+    opacity: 0.88;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+  .coach-bio p strong { opacity: 1; font-weight: 700; }
+  .coach-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .coach-stat {
+    text-align: center;
+  }
+  .coach-stat-num {
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--accent-2);
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .coach-stat-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text);
+    opacity: 0.65;
+  }
+  @media (max-width: 860px) {
+    .coach-feature { grid-template-columns: 1fr; gap: 40px; }
+    .coach-photo-main { aspect-ratio: 3/2; max-width: 480px; }
+    .coach-photo-secondary { display: none; }
+  }
+
+  /* ========== CLINIC TOPICS ========== */
+  .topics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .topics-intro p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text);
+    opacity: 0.88;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .topics-photo {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-strong);
+    aspect-ratio: 16/9;
+  }
+  .topics-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .topics-list {
+    list-style: none;
+    margin-top: 32px;
+  }
+  .topics-list li {
+    padding: 16px 0 16px 32px;
+    border-top: 1px solid var(--border);
+    position: relative;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .topics-list li:last-child { border-bottom: 1px solid var(--border); }
+  .topics-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-2);
+    font-weight: 700;
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    .topics-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ========== COACHING DEV ========== */
+  .coachdev {
+    background: rgba(43, 80, 192, 0.10);
+    border: 1px solid rgba(43, 80, 192, 0.30);
+    border-radius: var(--radius);
+    padding: 64px 52px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: start;
+  }
+  .coachdev h2 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+  .coachdev p {
+    color: var(--text);
+    opacity: 0.88;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+  .coachdev ul {
+    list-style: none;
+    margin: 24px 0;
+  }
+  .coachdev li {
+    padding: 13px 0 13px 28px;
+    border-top: 1px solid var(--border);
+    position: relative;
+    color: var(--text);
+    opacity: 0.9;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .coachdev li:first-child { border-top: none; }
+  .coachdev li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-2);
+    font-weight: 700;
+  }
+  @media (max-width: 860px) {
+    .coachdev { grid-template-columns: 1fr; padding: 40px 28px; }
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--border);
+    background: rgba(10, 14, 20, 0.6);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-brand-logo {
+    height: 52px;
+    width: auto;
+    display: block;
+    margin-bottom: 16px;
+  }
+  footer h4 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: var(--accent-2);
+  }
+  footer a {
+    display: block;
+    color: var(--text);
+    opacity: 0.75;
+    font-size: 14px;
+    padding: 4px 0;
+    transition: opacity 0.2s;
+  }
+  footer a:hover { opacity: 1; }
+  footer p { color: var(--text); opacity: 0.75; font-size: 14px; font-weight: 500; }
+  .footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--text);
+    opacity: 0.55;
+  }
+  @media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <a href="index.html"><img src="Euro+Camp+Logo_07.webp" alt="Euro Pro Basketball Camp" /></a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#curriculum">Curriculum</a>
+      <a href="#coach">Coach</a>
+      <a href="#coachdev">Coaches Dev</a>
+      <a href="https://splitsecondbasketball.leagueapps.com/camps/5003030-europro-camp-with-raoul-korner-july-27-30-players-grade-9-in-september-2026" class="btn" target="_blank" rel="noopener">Register Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<header class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <img src="Euro+Camp+Logo_07.webp" alt="Euro Pro Basketball Camp" class="hero-logo" />
+      <h1>Led by Raoul<br>Körner</h1>
+      <div class="hero-meta">
+        <div>📅 <strong>July 27–30, 2026</strong></div>
+        <div>📍 <strong>Kitsilano Secondary · Vancouver</strong></div>
+        <div>🏆 <strong>25 Years European Pro Head Coach</strong></div>
+      </div>
+      <p class="hero-sub">One of Europe's most accomplished professional basketball coaches comes to Vancouver to teach the offensive systems that define the modern game.</p>
+      <div class="hero-ctas">
+        <a href="index.html" class="btn btn-outline">← Camp Home</a>
+      </div>
+    </div>
+    <div class="hero-photo-col">
+      <div class="hero-photo-main">
+        <img src="images/raoul-coach.png" alt="Coach Raoul Körner" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========== COACH FEATURE ========== -->
+<section id="coach">
+  <div class="container">
+    <div class="coach-feature">
+      <div class="coach-photo-col">
+        <div class="coach-photo coach-photo-main">
+          <img src="images/raoul-huddle.png" alt="Raoul Körner coaching GhostHawks" />
+        </div>
+      </div>
+      <div>
+        <div class="coach-title-pill">Head Coach · Camp Director</div>
+        <h2 class="coach-name">Raoul Körner</h2>
+
+        <div class="coach-stats">
+          <div class="coach-stat">
+            <span class="coach-stat-num">25+</span>
+            <span class="coach-stat-label">Years Pro Head Coach</span>
+          </div>
+          <div class="coach-stat">
+            <span class="coach-stat-num">4+</span>
+            <span class="coach-stat-label">Countries Coached</span>
+          </div>
+          <div class="coach-stat">
+            <span class="coach-stat-num">∞</span>
+            <span class="coach-stat-label">Titles &amp; Awards</span>
+          </div>
+        </div>
+
+        <div class="coach-bio">
+          <p>Austrian professional basketball coach with over <strong>25 years at the highest levels of the game</strong> — spanning Germany, Austria, the Netherlands, and Taiwan.</p>
+          <p>Multiple League and Cup Championships in Austria and the Netherlands, with <strong>Coach of the Year honours</strong> throughout his career. Former Head Coach of the <strong>Austrian Men's National Team</strong> (2021 EuroBasket qualifiers).</p>
+          <p>Raoul has spent decades building and refining the offensive systems — pick and rolls, DHOs, ghost screens, spacing principles — that define how professional basketball is played in Europe today. His gift is making pro-level concepts accessible and immediately applicable to developing players.</p>
+          <p>We're thrilled to have Coach Körner return to Vancouver to share his energy, knowledge, and passion for the game with the next generation of BC players.</p>
+        </div>
+
+        <div style="margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="index.html#curriculum" class="btn btn-outline">View Curriculum</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CLINIC TOPICS ========== -->
+<section id="topics">
+  <div class="container">
+    <div class="section-label">From Coach Körner</div>
+    <h2 class="section-title">What you'll leave with.</h2>
+
+    <div class="topics-grid">
+      <div class="topics-intro">
+        <p>Basketball is all about finding ways to create small advantages on your primary defender and drawing help from a second defender. This camp is about building that vocabulary — the same one Raoul has used to win championships across Europe.</p>
+        <p>Watch him work. Ask him directly. Leave with an understanding of the game that most players spend years trying to figure out on their own.</p>
+
+        <ul class="topics-list">
+          <li>How to create an initial advantage using pick and roll</li>
+          <li>DHO actions and how to read the defense off them</li>
+          <li>Off-ball screening — timing, angles, and reads</li>
+          <li>Ghost and blur screens in modern offensive systems</li>
+          <li>Spacing, passing, and movement to sustain advantages</li>
+          <li>Finishing at the rim in today's professional game</li>
+        </ul>
+      </div>
+      <div>
+        <div class="topics-photo" style="aspect-ratio: auto;">
+          <img src="images/raoul-faried.png" alt="Raoul Körner with NBA player at GhostHawks practice" style="height: auto;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== COACHING DEVELOPMENT ========== -->
+<section id="coachdev">
+  <div class="container">
+    <div class="coachdev">
+      <div>
+        <div class="section-label">Coaching Development</div>
+        <h2>Are you a coach?</h2>
+        <p>This is also a fantastic opportunity for coaching development. If you're a coach looking to learn how to teach modern European offensive actions and reads, we'd love to have you involved.</p>
+        <p>Email Greg directly to learn more about this opportunity.</p>
+        <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="mailto:greg@splitsecondbasketball.com" class="btn">Email Greg</a>
+        </div>
+      </div>
+      <div>
+        <ul>
+          <li>Learn to teach pick and roll, DHOs, and screening actions from a European pro perspective</li>
+          <li>Observe Coach Körner's teaching methods and on-court communication in real time</li>
+          <li>Ask questions directly during breaks and sessions</li>
+          <li>Build relationships with other coaches working on their development</li>
+          <li>Take away a coaching framework you can apply with your own team immediately</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="Euro+Camp+Logo_07.webp" alt="Euro Pro Basketball Camp" class="footer-brand-logo" />
+        <p>An intensive 4-day camp in Vancouver focused on European professional offensive systems — led by Coach Raoul Körner.</p>
+      </div>
+      <div>
+        <h4>Camp</h4>
+        <a href="index.html#about">About</a>
+        <a href="index.html#curriculum">Curriculum</a>
+        <a href="index.html#eligibility">Eligibility &amp; Details</a>
+        <a href="coaches.html">Coaches</a>
+      </div>
+      <div>
+        <h4>Register</h4>
+        <a href="https://splitsecondbasketball.leagueapps.com/camps/5003030-europro-camp-with-raoul-korner-july-27-30-players-grade-9-in-september-2026" target="_blank" rel="noopener">Sign Up Now</a>
+        <a href="mailto:greg@splitsecondbasketball.com">Coaching Inquiries</a>
+        <a href="mailto:Lesley@splitsecondbasketball.com">Lunch Permission</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Euro Pro Basketball Camp · Split Second Basketball</span>
+      <span>Kitsilano Secondary · Vancouver, BC</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
