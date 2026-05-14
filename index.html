@@ -184,11 +184,29 @@
     padding: 7px 14px;
     border-radius: 999px;
   }
+  .hero-logo-lockup {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
   .hero-logo {
     height: clamp(130px, 18vw, 220px);
     width: auto;
     display: block;
-    margin-bottom: 28px;
+  }
+  .hero-logo-x {
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 900;
+    font-style: italic;
+    color: var(--border-strong);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .hero-ssb-logo {
+    height: clamp(80px, 11vw, 140px);
+    width: auto;
+    display: block;
   }
   .hero h1 {
     font-size: clamp(36px, 5vw, 64px);
@@ -252,7 +270,7 @@
     .hero { padding: 48px 0 64px; }
     .hero-inner { grid-template-columns: 1fr; gap: 48px; }
     .hero-content { text-align: center; }
-    .hero-logo { margin: 0 auto 28px; }
+    .hero-logo-lockup { justify-content: center; }
     .hero-ctas { justify-content: center; }
     .hero-meta { justify-content: center; }
     .hero-photo-col { max-width: 480px; margin: 0 auto; }
@@ -677,7 +695,11 @@
   <div class="container hero-inner">
     <div class="hero-content">
       <span class="eyebrow">Vancouver · July 27–30, 2026</span>
-      <img src="Euro+Camp+Logo_07.webp" alt="Euro Pro Basketball Camp" class="hero-logo" />
+      <div class="hero-logo-lockup">
+        <img src="Euro+Camp+Logo_07.webp" alt="Euro Pro Basketball Camp" class="hero-logo" />
+        <span class="hero-logo-x">×</span>
+        <img src="images/ssb-long-logo.png" alt="Split Second Basketball" class="hero-ssb-logo" />
+      </div>
       <h1>Euro Pro<br>Basketball<br>Camp</h1>
       <div class="hero-meta">
         <div>📅 <strong>July 27–30, 2026</strong></div>
